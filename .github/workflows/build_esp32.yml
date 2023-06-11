@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        example: [examples/Lamp, examples/LampEncrypted, examples/LampDimmer, examples/Switch , examples/TempSensor]
+        example: [examples/Lamp, examples/LampDimmer, examples/Switch , examples/TempSensor]
 
     steps:
 
@@ -41,3 +41,6 @@ jobs:
       run: pio ci --lib="." -b esp32dev
       env:
         PLATFORMIO_CI_SRC: ${{ matrix.example }}
+    - name: Step 7 - Run build LampEncrypted examples using PlatformIO
+      run: pio ci --lib="." --project-option="build_flags=-DRH_ENABLE_ENCRYPTION_MODULE" -b esp32dev examples/LampEncrypted
+  
