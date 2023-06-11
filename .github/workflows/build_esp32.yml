@@ -38,9 +38,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade platformio
     - name: Step 6 - Run build examples using PlatformIO
-      run: pio ci --lib="." -b esp32dev
+      run: pio ci --lib="." -b nodemcu-32s
       env:
         PLATFORMIO_CI_SRC: ${{ matrix.example }}
     - name: Step 7 - Run build LampEncrypted examples using PlatformIO
-      run: pio ci --lib="." --project-option="build_flags=-DRH_ENABLE_ENCRYPTION_MODULE" -b esp32dev examples/LampEncrypted
+      run: pio ci --lib="." --project-option="build_flags=-DRH_ENABLE_ENCRYPTION_MODULE" -b nodemcu-32s examples/LampEncrypted
   

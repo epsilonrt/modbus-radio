@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "epsilonrt/Modbus-Arduino": "^1.3.0",
-    "mikem/RadioHead": "^1.120",
+    "epsilonrt/RadioHead": "^1.122.1",
     "rweather/Crypto": "^0.4.0"
   },
   "frameworks": "arduino",
