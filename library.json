@@ -1,6 +1,6 @@
 {
   "name": "Modbus-Radio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": "modbus, server, slave, radio, radiohead, lora, rf22, rf24, rf26, rf27, rf69, si4460, si4461, si4463, si4464, nrf24, nrf905, sx1276, sx77, sx78, rfm95, rfm96, rfm97, rfm98",
   "description": "A library that allows your Arduino to communicate via Modbus protocol, acting as a slave. Over-the-air implementation with devices supported by the RadioHead library.",
   "homepage": "https://github.com/epsilonrt/modbus-radio",
