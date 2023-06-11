@@ -49,11 +49,11 @@ The MODBUS protocol defines a simple protocol data unit (**PDU**) independent of
 underlying communication layers. The mapping of MODBUS protocol on specific buses or
 network can introduce some additional fields on the application data unit (**ADU**)
 
-![Modbus ADU](https://github.com/epsilonrt/modbus-radio/raw/master/extras/adu-pdu.png)
+![Modbus ADU](https://github.com/epsilonrt/modbus-radio/raw/main/extras/images/adu-pdu.png)
 
 Modbus-Radio uses the **same ADU as for Mobdus RTU** OSL (Over Serial Line)
 
-![Modbus ADU](https://github.com/epsilonrt/modbus-radio/raw/master/extras/adu-rtu.png)
+![Modbus ADU](https://github.com/epsilonrt/modbus-radio/raw/main/extras/images/adu-rtu.png)
 
 the Address field only contains the slave address. The individual slave
 devices are assigned addresses in the range of 1 – 247.   
